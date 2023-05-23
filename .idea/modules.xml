@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/acwing/acwing.iml" filepath="$PROJECT_DIR$/acwing/acwing.iml" />
       <module fileurl="file://$PROJECT_DIR$/cf/cf.iml" filepath="$PROJECT_DIR$/cf/cf.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/niuke/niuke.iml" filepath="$PROJECT_DIR$/niuke/niuke.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nowcoder/nowcoder.iml" filepath="$PROJECT_DIR$/nowcoder/nowcoder.iml" />
     </modules>
   </component>
 </project>
