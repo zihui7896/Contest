@@ -1,2 +1,2 @@
 # Contest
-leetcode_contest niuke acwing (java) 
+leetcode niuke acwing (java) 
