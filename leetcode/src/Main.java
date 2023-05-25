@@ -10,8 +10,6 @@ public class Main {
         Read sc = new Read();
 
 
-
-
         sc.bw.flush();
         sc.bw.close();
     }
