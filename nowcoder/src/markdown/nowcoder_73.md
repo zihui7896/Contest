@@ -1,6 +1,8 @@
 ### a
 [https://ac.nowcoder.com/acm/contest/57683/A](https://ac.nowcoder.com/acm/contest/57683/A)
-[](../images/微信截图_20230526210840.png)
+
+<img src="../images/微信截图_20230526210840.png">
+
 ```java
 import java.util.Scanner;
 
@@ -15,7 +17,9 @@ public class A{
 ```
 ### b
 [https://ac.nowcoder.com/acm/contest/57683/B](https://ac.nowcoder.com/acm/contest/57683/B)
-[](../images/微信截图_20230526211113.png)
+
+<img src="../images/微信截图_20230526211113.png">
+
 ```java
 public class B {
     public static void main (String[] args) {
@@ -35,7 +39,9 @@ public class B {
 ```
 
 [https://ac.nowcoder.com/acm/contest/57683/C](https://ac.nowcoder.com/acm/contest/57683/C)
-[](../images/微信截图_20230526211315.png)
+
+<img src="../images/微信截图_20230526211315.png">
+
 ```java
 import java.util.Scanner;
 import java.util.Arrays;
