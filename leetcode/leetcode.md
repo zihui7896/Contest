@@ -1,1 +1,1 @@
-### [leetcode第346场周赛](./src/leetcode_346.md)
+### [leetcode第346场周赛](./src/markdown/leetcode_346.md)
