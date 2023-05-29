@@ -45,3 +45,22 @@ class Solution {
     }
 }
 ```
+
+#### c
+
+<img src="../images/微信截图_20230529211928.png">
+
+```java
+class Solution {
+    public long minimumCost(String s) {
+        long res = 0;
+        int n = s.length();
+
+        for (int i = 1; i < n; i ++) {
+            if (s.charAt(i) != s.charAt(i - 1)) res += Math.min(n - i, i);
+        }
+        return res;
+    }
+}
+```
+
