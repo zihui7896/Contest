@@ -1,11 +1,14 @@
 package com.contest.acw_106;
 
-import java.util.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.math.BigInteger;
-
+import java.util.StringTokenizer;
 public class A {
-    public static void main(String args[]) throws IOException{
+    public static void main(String args[]) throws IOException {
         Read sc = new Read();
 
         int n = sc.nextInt(), m = sc.nextInt();
@@ -24,6 +27,10 @@ public class A {
             }
         }
         sc.println(new String(res));
+
+        sc.bw.flush();
+        sc.bw.close();
+
 
         sc.bw.flush();
         sc.bw.close();
@@ -69,6 +76,11 @@ public class A {
         }
         public void print(BigInteger a) throws IOException{
             bw.write(a.toString());
+            return;
+        }
+        public void println(BigInteger a) throws IOException{
+            bw.write(a.toString());
+            bw.newLine();
             return;
         }
     }
