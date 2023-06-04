@@ -1,5 +1,7 @@
 ### a
 
+[https://leetcode.cn/problems/minimize-string-length/](https://leetcode.cn/problems/minimize-string-length/)
+
 <img src="../images/微信截图_20230604133621.png">
 
 ```java
@@ -21,6 +23,8 @@ class Solution {
 ```
 
 ### b
+
+[https://leetcode.cn/problems/semi-ordered-permutation/](https://leetcode.cn/problems/semi-ordered-permutation/)
 
 <img src="../images/微信截图_20230604133747.png">
 
@@ -54,6 +58,8 @@ class Solution {
 ```
 
 ### c
+
+[https://leetcode.cn/problems/sum-of-matrix-after-queries/](https://leetcode.cn/problems/sum-of-matrix-after-queries/)
 
 <img src="../images/微信截图_20230604133907.png">
 
