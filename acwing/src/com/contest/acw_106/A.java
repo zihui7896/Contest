@@ -1,26 +1,29 @@
-package com.contest.acw_73;
+package com.contest.acw_106;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.*;
+import java.io.*;
 import java.math.BigInteger;
-import java.util.StringTokenizer;
+
 public class A {
-    public static void main(String args[]) throws IOException {
+    public static void main(String args[]) throws IOException{
         Read sc = new Read();
 
-        int n = sc.nextInt();
-        int[] arr = new int[n + 2];
-        int res = 0;
-
-        for (int i = 1; i <= n; i ++) arr[i] = sc.nextInt();
-
-        for (int i = 2; i < n; i ++) {
-            if ((arr[i] > arr[i + 1] && arr[i] > arr[i - 1])  || (arr[i] < arr[i + 1] && arr[i] < arr[i - 1])) res ++;
+        int n = sc.nextInt(), m = sc.nextInt();
+        String s = sc.next();
+        char[] res = s.toCharArray();
+        while (m -- != 0) {
+            int l = sc.nextInt(), r = sc.nextInt();
+            l --;
+            r --;
+            String aa = sc.next(), bb = sc.next();
+            char a = aa.charAt(0), b = bb.charAt(0);
+            for (int i = l; i <= r; i ++) {
+                if (res[i] == a) {
+                    res[i] = b;
+                }
+            }
         }
-        sc.println(res);
+        sc.println(new String(res));
 
         sc.bw.flush();
         sc.bw.close();
@@ -66,11 +69,6 @@ public class A {
         }
         public void print(BigInteger a) throws IOException{
             bw.write(a.toString());
-            return;
-        }
-        public void println(BigInteger a) throws IOException{
-            bw.write(a.toString());
-            bw.newLine();
             return;
         }
     }

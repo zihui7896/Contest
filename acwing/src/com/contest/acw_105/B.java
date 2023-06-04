@@ -1,4 +1,4 @@
-package com.contest.acw_73;
+package com.contest.acw_105;
 
 import java.util.Scanner;
 
