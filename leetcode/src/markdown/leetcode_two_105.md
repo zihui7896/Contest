@@ -1,5 +1,7 @@
 ### a
 
+[https://leetcode.cn/problems/buy-two-chocolates/](https://leetcode.cn/problems/buy-two-chocolates/)
+
 <img src="../images/微信截图_20230531162545.png">
 
 ```java
@@ -14,7 +16,12 @@ class Solution {
 
 ### b
 
+[https://leetcode.cn/problems/extra-characters-in-a-string/](https://leetcode.cn/problems/extra-characters-in-a-string/)
+
 ### c
+
+[https://leetcode.cn/problems/maximum-strength-of-a-group/](https://leetcode.cn/problems/maximum-strength-of-a-group/)
+
 <img src="../images/微信截图_20230531162705.png">
 
 ```java
