@@ -1,4 +1,7 @@
 #### a
+
+[https://leetcode.cn/problems/remove-trailing-zeros-from-a-string/](https://leetcode.cn/problems/remove-trailing-zeros-from-a-string/)
+
 <img src="../images/微信截图_20230528194834.png">
 
 ```java
@@ -11,6 +14,9 @@ class Solution {
 }
 ```
 #### b
+
+[https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/)
+
 <img src="../images/微信截图_20230528195007.png">
 
 ```java
@@ -47,6 +53,8 @@ class Solution {
 ```
 
 #### c
+
+[https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/](https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/)
 
 <img src="../images/微信截图_20230529211928.png">
 
