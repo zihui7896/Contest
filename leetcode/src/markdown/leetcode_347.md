@@ -2,7 +2,7 @@
 
 [https://leetcode.cn/problems/remove-trailing-zeros-from-a-string/](https://leetcode.cn/problems/remove-trailing-zeros-from-a-string/)
 
-<img src="../images/微信截图_20230528194834.png">
+<img src="../images/20230528194834.png">
 
 ```java
 class Solution {
