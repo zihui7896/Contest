@@ -2,6 +2,8 @@
 
 ## [leetcode](./leetcode/leetcode.md)
 
+[leetcode第106场 双周赛](./leetcode/src/markdown/leetcode_two_106.md)
+
 
 #### [leetcode第348场周赛](./leetcode/src/markdown/leetcode_348.md)
 #### [leetcode第347场周赛](./leetcode/src/markdown/leetcode_347.md)

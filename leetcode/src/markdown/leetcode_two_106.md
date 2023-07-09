@@ -30,6 +30,50 @@ class Solution {
 <img src="../images/two_106/20230704174738.png">
 
 ```java
+class Solution {
+    public int longestSemiRepetitiveSubstring(String s) {
+        int l = 0, r = 1;
+        int n = s.length();
+        int cnt = 0, res = 1;
+        
+        for ( ; r < n; r ++) {
+            if (s.charAt(r) == s.charAt(r - 1)) {
+                cnt ++;
+                if (cnt > 1) {
+                    for (l ++; s.charAt(l) != s.charAt(l - 1); l ++) 
+                    cnt = 1;
+                }
+            }
+            res = Math.max(res, r - l + 1);
+        }
+        return res;
+    }
+}
+```
+
+```c++
+class Solution {
+public:
+    int longestSemiRepetitiveSubstring(string s) {
+        int ans = 1, cnt = 0;
+
+        for (int i = 1, j = 0; i < s.size(); i++) {
+            if (s[i] == s[i - 1])
+                ++cnt;
+
+            while (cnt > 1 && j < i) {
+                if (s[j] == s[j + 1])
+                    --cnt;
+
+                ++j;
+            }
+
+            ans = max(ans, i - j + 1);
+        }
+
+        return ans;
+    }
+};
 
 ```
 
