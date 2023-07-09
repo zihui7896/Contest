@@ -1,6 +1,8 @@
 ### a
 
-<img src="../images/微信截图_20230614130600.png">
+[https://leetcode.cn/problems/neither-minimum-nor-maximum/](https://leetcode.cn/problems/neither-minimum-nor-maximum/)
+
+<img src="../images/349/20230709192746.png">
 
 ```java
 class Solution {
@@ -18,34 +20,56 @@ class Solution {
 
 ### b
 
-<img src="../images/微信截图_20230614130738.png">
+[https://leetcode.cn/problems/lexicographically-smallest-string-after-substring-operation/](https://leetcode.cn/problems/lexicographically-smallest-string-after-substring-operation/)
+
+<img src="../images/349/20230709193029.png">
 
 ```java
 class Solution {
     public String smallestString(String s) {
         int n = s.length();
-        StringBuilder res = new StringBuilder();
-
-        int idex = 0;
-        while (idex < n && s.charAt(idex) == 'a') {
-            idex ++;
-            res.append('a');
-        }
-        if (idex == n) {
-            res.setCharAt(n - 1, 'z');
-            return res.toString();
-        }
-        int st = idex;
-        while (st < n && s.charAt(st) != 'a') {
-            res.append((char)(s.charAt(st) - 'a' - 1 + 'a'));
-            st ++;
-        }
-        while (st < n) {
-            res.append(s.charAt(st));
-            st ++;
+        
+        char[] arr = s.toCharArray();
+        int st = -1;
+        for (int i = 0; i < n; i ++) {
+            if (arr[i] != 'a') {
+                st = i;
+                break;
+            }
         }
 
-        return res.toString();
+        if (st == -1) {
+            arr[n - 1] = 'z';
+            return new String(arr);
+        }
+
+        for (int i = st; i < n && arr[i] != 'a'; i ++) {
+            arr[i] = (char)(arr[i]  - 'a' - 1 + 'a');
+        }
+        return new String(arr);
+
     }
 }
+```
+
+### c 
+
+[https://leetcode.cn/problems/collecting-chocolates/](https://leetcode.cn/problems/collecting-chocolates/)
+
+<img src="../images/349/20230709194040.png">
+
+```java
+
+```
+
+
+### d
+
+[https://leetcode.cn/problems/maximum-sum-queries/](https://leetcode.cn/problems/maximum-sum-queries/)
+
+<img src="../images/349/20230709194139.png">
+
+
+```java
+
 ```
