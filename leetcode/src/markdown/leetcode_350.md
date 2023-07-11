@@ -2,7 +2,7 @@
 
 [https://leetcode.cn/problems/total-distance-traveled/description/](https://leetcode.cn/problems/total-distance-traveled/description/)
 
-<img src="../images/500/a_500.png">
+<img src="../images/350/a_350.png">
     
 ```java
 class Solution {
@@ -16,7 +16,7 @@ class Solution {
 
 [https://leetcode.cn/problems/find-the-value-of-the-partition/](https://leetcode.cn/problems/find-the-value-of-the-partition/)
 
-<img src="../images/500/b_500.png">
+<img src="../images/350/b_350.png">
 
 ```java
 class Solution {
@@ -35,7 +35,7 @@ class Solution {
 
 [https://leetcode.cn/problems/special-permutations/](https://leetcode.cn/problems/special-permutations/)
 
-<img src="../images/500/c_500.png">
+<img src="../images/350/c_350.png">
 
 ```java
 
@@ -45,7 +45,7 @@ class Solution {
 
 [https://leetcode.cn/problems/painting-the-walls/](https://leetcode.cn/problems/painting-the-walls/)
 
-<img src="../images/500/d_500.png">
+<img src="../images/350/d_350.png">
 
 ```java
 
