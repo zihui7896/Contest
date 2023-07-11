@@ -9,7 +9,6 @@ public class Main {
     public static void main(String args[]) throws IOException {
         Read sc = new Read();
 
-
         sc.bw.flush();
         sc.bw.close();
     }
