@@ -1,3 +1,5 @@
+### [leetcode 第 351 周赛](./src/markdown/leetcode_351.md)
+
 ### [leetcode 第 107 场 双周赛](./src/markdown/leetcode_two_107.md)
 
 ### [leetcode 第 350 周赛](./src/markdown/leetcode_350.md)
