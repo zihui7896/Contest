@@ -42,7 +42,34 @@ class Solution {
 <img src="../images/352/352_b.png">
 
 ```java
+class Solution {
+    private final static int MX = (int) 1e6;
+    private final static int[] primes = new int[78498];
+    private final static boolean[] np = new boolean[MX + 1];
 
+    static {
+        var pi = 0;
+        for (var i = 2; i <= MX; ++i) {
+            if (!np[i]) {
+                primes[pi++] = i;
+                for (var j = i; j <= MX / i; ++j) 
+                    np[i * j] = true;
+            }
+        }
+    }
+
+    public List<List<Integer>> findPrimePairs(int n) {
+        if (n % 2 > 0)
+            return n > 4 && !np[n - 2] ? List.of(List.of(2, n - 2)) : List.of();
+        var ans = new ArrayList<List<Integer>>();
+        for (int x : primes) {
+            int y = n - x;
+            if (y < x) break;
+            if (!np[y]) ans.add(List.of(x, y));
+        }
+        return ans;
+    }
+}
 ```
 
 ### c
