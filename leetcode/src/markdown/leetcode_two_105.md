@@ -40,3 +40,13 @@ class Solution {
     }
 }
 ```
+
+### d
+
+[https://leetcode.cn/problems/greatest-common-divisor-traversal/](https://leetcode.cn/problems/greatest-common-divisor-traversal/)
+
+<img src="../images/微信截图_20230901164457.png">
+
+```java
+
+```
