@@ -1,67 +1,10 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.math.BigInteger;
-import java.util.StringTokenizer;
-public class Main {
-    public static void main(String args[]) throws IOException {
-        Read sc = new Read();
-        
-        
-        
-        
-        sc.bw.flush();
-        sc.bw.close();
-    }
-    static class Read{
-        BufferedReader bf;
-        StringTokenizer st;
-        BufferedWriter bw;
-        public Read(){
-            bf=new BufferedReader(new InputStreamReader(System.in));
-            st=new StringTokenizer("");
-            bw=new BufferedWriter(new OutputStreamWriter(System.out));
-        }
-        public String nextLine() throws IOException{
-            return bf.readLine();
-        }
-        public String next() throws IOException{
-            while(!st.hasMoreTokens()){
-                st=new StringTokenizer(bf.readLine());
-            }
-            return st.nextToken();
-        }
-        public int nextInt() throws IOException{
-            return Integer.parseInt(next());
-        }
-        public long nextLong() throws IOException{
-            return Long.parseLong(next());
-        }
-        public double nextDouble() throws IOException{
-            return Double.parseDouble(next());
-        }
-        public BigInteger nextBigInteger() throws IOException{
-            return new BigInteger(next());
-        }
-        public <T> void println(T a) throws IOException{
-            bw.write(String.valueOf(a));
-            bw.newLine();
-            return;
-        }
-        public <T> void print(T a) throws IOException{
-            bw.write(String.valueOf(a));
-            return;
-        }
-        public void print(BigInteger a) throws IOException{
-            bw.write(a.toString());
-            return;
-        }
-        public void println(BigInteger a) throws IOException{
-            bw.write(a.toString());
-            bw.newLine();
-            return;
-        }
-    }
-}
+public ConfigurableApplicationContext run(String... args) {   
+      // 创建StopWatch对象，用于统计run方法启动时长。    
+       StopWatch stopWatch = new StopWatch();     // 启动统计
+            stopWatch.start();    
+             ConfigurableApplicationContext context = null;  
+                Collection<SpringBootExceptionReporter> exceptionReporters = new ArrayList<>();    
+                 // 配置Headless属性    
+                  configureHeadlessProperty();   
+                    // 获得SpringApplicationRunListener数组，     // 该数组封装于SpringApplicationRunListeners对象的listeners中。     SpringApplicationRunListeners listeners = getRunListeners(args);     // 启动监听，遍历SpringApplicationRunListener数组每个元素，并执行。     listeners.starting();     try {         // 创建ApplicationArguments对象         ApplicationArguments applicationArguments =              new DefaultApplicationArguments(args);         // 加载属性配置，包括所有的配置属性。         ConfigurableEnvironment environment =              prepareEnvironment(listeners, applicationArguments);         configureIgnoreBeanInfo(environment);         // 打印Banner         Banner printedBanner = printBanner(environment);         // 创建容器         context = createApplicationContext();         // 异常报告器         exceptionReporters = getSpringFactoriesInstances(             SpringBootExceptionReporter.class,             new Class[] { ConfigurableApplicationContext.class }, context);         // 准备容器，组件对象之间进行关联。         prepareContext(context, environment,                         listeners, applicationArguments, printedBanner);         // 初始化容器         refreshContext(context);         // 初始化操作之后执行，默认实现为空。         afterRefresh(context, applicationArguments);         // 停止时长统计         stopWatch.stop();         // 打印启动日志         if (this.logStartupInfo) {             new StartupInfoLogger(this.mainApplicationClass)                 .logStarted(getApplicationLog(), stopWatch);         }         // 通知监听器：容器完成启动。         listeners.started(context);         // 调用ApplicationRunner和CommandLineRunner的运行方法。         callRunners(context, applicationArguments);     } catch (Throwable ex) {         // 异常处理         handleRunFailure(context, ex, exceptionReporters, listeners);         throw new IllegalStateException(ex);     }      try {         // 通知监听器：容器正在运行。         listeners.running(context);     } catch (Throwable ex) {         // 异常处理         handleRunFailure(context, ex, exceptionReporters, null);         throw new IllegalStateException(ex);     }   
+  return context; }
